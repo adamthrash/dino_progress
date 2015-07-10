@@ -1,3 +1,4 @@
+import sys
 def print_dino_progress(number_of_items, current_position, dinosaur):
     stegasaurus = """
                          .       .
@@ -42,10 +43,50 @@ def print_dino_progress(number_of_items, current_position, dinosaur):
                              /  //
                             <_oo_>
     """
+
+    pleisiosaur = """
+                                                            ///\\\\\\\\
+                                   --_                    //       \\\\
+                                    \\ \\                ///           \\\\
+                                    \\  \\             //       ///\\\\    \\
+              --___   //////\\\\\\\\    |   \\         ///       //     \\   \\
+              \\    ///          \\\\\\\\\\\\\\ |       //        //       \\    \\
+               \\///                    \\\\\\\\\\\\\\///        /          \\    \\
+              //                                        /            \\   \\
+             /                                         /             \\    \\
+           //                                        //              \\    \\
+         //                                         /                 \\   \\
+        /                            /     \\      //                  \\   \\
+      //                  \\          \\     /    //                    \\   /
+     /                    /           \\    /   /                      /   /
+    /     ///\\\\\\\\\\  \\     /           |    |///                       /   /
+    //    //        \\\\|    /\\\\\\       ///    /                         /    /
+    /    //            /    /   \\\\\\\\/// /    /                          /    /
+    /   //              /    /           /   /                          /    /
+    /   /              /   _/           /  _/                           /    /
+    /   /              /  /            /__/                            /    /
+    \\   \\             /__/                                            /    /
+    \\  \\                                                           _/    /
+    \\  \\                                                       __/     /
+    \\  \\                                                  ___/       /
+    \\  \\_                                           __---/       ___/
+    \\   ---_____                             __---/          __/
+     \\______-----                           /        _____---
+                                           /     ___/
+                                          /     /
+                                          |  O  \\
+                                          /    /|
+                                          /   / /
+                                          /  / /
+                                          |m/\\_/
+            """
+
     if dinosaur == "dimetredon":
         dino_array = dimetredon.split("\n")
     elif dinosaur == "stegasaurus":
         dino_array = stegasaurus.split("\n")
+    elif dinosaur == "pleisiosaur":
+        dino_array = pleisiosaur.split("\n")
     else:
         dino_array = stegasaurus.split("\n")
 
@@ -63,7 +104,7 @@ def print_dino_progress(number_of_items, current_position, dinosaur):
             dino_line = 0
 
 ## EXAMPLE USAGE
-stuff = [0]*100
+stuff = [0]*190
 for i in range(len(stuff)):
     # process your stuff
     stuff[i] = stuff[i]+i
